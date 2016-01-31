@@ -1,0 +1,22 @@
+<ion-view view-title="Wall">
+  <ion-content>
+      <div class="list card">
+          <div class="item item-divider">
+              My Challenges !
+          </div>
+          <a class="item item-thumbnail-left" ng-repeat="thumbnail in mythumbnails" href="#/app/mycard/{{thumbnail.id}}">
+                  <img src="img/{{thumbnail.img}}">
+                  <h3>{{thumbnail.title}}</h3>
+                  <p>{{thumbnail.subtitle}}</p>
+          </a>
+          <div class="item item-divider">
+              Other Challenges !
+          </div>
+          <a class="item item-thumbnail-left" ng-repeat="thumbnail in otherthumbnails" href="#/app/othercard/{{thumbnail.id}}">
+              <img src="img/{{thumbnail.img}}">
+              <h3>{{thumbnail.title}}</h3>
+              <p>{{thumbnail.subtitle}}</p>
+          </a>
+      </div>
+  </ion-content>
+</ion-view>
